@@ -1,9 +1,10 @@
-import "../styles/overall.css";
 import {Link} from 'react-router-dom';
+import Button from '@mui/material/Button';
 import familyImg from '../assets/families.jpg';
 // import familyImgLong from '/Users/vi.rubio/Desktop/MCS Web App/mcs/src/images/familiesLong.jpg';
 // import familyImgSoft from '/Users/vi.rubio/Desktop/MCS Web App/mcs/src/images/soft.jpeg';
 import familyImgLandscape from '../assets/family-community.jpg';
+import "../styles/overall.css";
 // import familyImgLandscape from '/Users/vi.rubio/Desktop/MCS Web App/mcs/src/images/landscape.jpg';
 
 const Families = function () {
@@ -44,8 +45,12 @@ const Families = function () {
             </ul>
             </div>
           </div>
-          <div> 
-          <div className="button1 alignCenter smallerFont"><Link to={'/donate#contactUs'}>Contact Us</Link></div>
+          <div>
+          <div className="center-div">
+            <div className="inner-div"><p>Want to know more?</p></div>
+            <div className="inner-div"><Button variant="contained"><Link to={'/donate#contactUs'}>Contact Us</Link></Button></div>
+         </div> 
+          {/* <div className="button1 alignCenter smallerFont"><Link to={'/donate#contactUs'}>Contact Us</Link></div> */}
           </div>
       </div>
     </>

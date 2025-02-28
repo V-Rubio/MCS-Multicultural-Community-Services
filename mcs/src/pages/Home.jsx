@@ -1,5 +1,6 @@
 import "../styles/overall.css";
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 import homeImg from '../assets/home.jpg';
 import homeImg2 from '../assets/home2.jpg';
 const Home = function () {
@@ -63,7 +64,12 @@ const Home = function () {
               
             </div>
         </div>
-        <div className="button1 alignCenter smallerFont"><Link to={'/donate#contactUs'}>Contact Us</Link></div>
+        <div className="center-div" style={{marginTop: '2vh'}}>
+          <div className="inner-div"><p>Want to know more?</p></div>
+          <div className="inner-div"><Button variant="contained"><Link to={'/donate#contactUs'}>Contact Us</Link></Button></div>
+        </div>
+        
+        {/* <div className="button1 alignCenter smallerFont"><Link to={'/donate#contactUs'}>Contact Us</Link></div> */}
       </div>
     </>
   );

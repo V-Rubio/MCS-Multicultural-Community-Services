@@ -1,2 +1,4 @@
 Notes:
     pages extension need to be of .jsx type
+
+    make sure when installing that you're in the my-app directory folder

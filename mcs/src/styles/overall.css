@@ -1,7 +1,15 @@
 
-body {
+/* body {
   padding-top: 10rem;
+} */
+
+.center-div {
+  display: flex;
+  flex-direction: column; /* Stack the child divs vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
 }
+
 
 /* Unordered List with Circle Style */
 .ulCircle {
@@ -186,6 +194,15 @@ body {
 a::after {
   color: black;
 }
+
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: white; /* Maintain the same color in different states */
+}
+
 
 /* Smaller Links should have underline */
 #smallLink{

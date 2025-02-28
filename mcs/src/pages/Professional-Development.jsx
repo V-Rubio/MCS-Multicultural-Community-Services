@@ -1,5 +1,6 @@
-import "../styles/overall.css";
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
+import "../styles/overall.css";
 
 const PD = function () {
   return (
@@ -11,7 +12,8 @@ const PD = function () {
         </Link>
         <div className="whiteBlock">
           <div className = 'bigBoldFont'>Nurturing Parenting Trainer of Trainers</div>
-          <div className = 'normalFont alignCenter button1'><Link to={'https://www.nurturingparenting.com/trainer.i'}>Discover More</Link></div>
+          <div className="center-div" style={{marginTop: '1vh'}}><Button variant="contained"><Link to={'https://www.nurturingparenting.com/trainer.i'}>Discover More</Link></Button></div>
+          {/* <div className = 'normalFont alignCenter button1'><Link to={'https://www.nurturingparenting.com/trainer.i'}>Discover More</Link></div> */}
         </div>
         <div className="blueBlock">
           <div className = 'bigBoldFont'> Nurturing Parenting Facilitator Training</div>
