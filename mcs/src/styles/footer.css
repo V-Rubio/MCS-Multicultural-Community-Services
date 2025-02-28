@@ -1,0 +1,29 @@
+.footContainer { 
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #f8f9fa;
+    /* #e9ecef */
+    height: 15rem;
+    color: black;
+
+    /* position: fixed; */
+   /* left: 0; */
+   /* bottom: 0; */
+   justify-content: flex-end;
+   
+   text-align: center;
+   align-items: center;
+}
+
+#footerCopyright{
+    bottom: 0;
+    left: middle;
+}
+
+#footerPlacing {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+}

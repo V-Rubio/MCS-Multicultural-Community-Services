@@ -1,0 +1,2 @@
+Notes:
+    pages extension need to be of .jsx type

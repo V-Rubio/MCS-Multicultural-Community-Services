@@ -1,12 +1,23 @@
 Installing... 
 
-    Next.js (App Router)
-        npx create-next-app@latest
-
     React Router (v7)
-        npx create-react-router@latest
+        npm install react-router-dom
+            npm uninstall react-router-dom
+        npm install react react-dom
+
+        (note: this did not work for me) npx create-react-router@latest
 
     Vite (incompatible with Next.js)
         npm create vite@latest my-app -- --template react
 
+    Bootstrap
+        npm install react-bootstrap bootstrap
 
+
+Running Development Server: 
+    npm run dev
+        it tells you in terminal what localhost (on http://localhost:5173/)
+
+Unused Installations of Note: 
+    Next.js (App Router) - heavy 
+        npx create-next-app@latest

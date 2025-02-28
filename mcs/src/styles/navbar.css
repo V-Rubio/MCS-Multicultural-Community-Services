@@ -1,0 +1,163 @@
+.fixToTop {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  
+}
+
+.whiteBlockNavbar{
+  width: auto;
+  min-height: 10vh;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  /* padding-bottom: 0.05rem; */
+  /* color: black; */
+  /* padding: 2rem; */
+}
+
+.ulNone {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    gap: 90px;
+    align-content: space-between;
+    
+  }
+  
+  li {
+    float: left;
+    font-weight: 600;
+    
+    /* Center Means more for mobile layout */
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover
+  li a:hover {
+    background-color: lightgray;
+  }  */
+
+
+li a {
+  background-image: linear-gradient(
+    to right,
+    #012E5D,
+    #012E5D 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  /* padding: 5px 0; */
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:before{
+  content: '';
+  background: #012E5D;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+ background-position: 0;
+}
+
+li a:hover::before{
+  width: 100%;
+}
+
+  .logo {
+    color: #012E5D;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+
+  }
+
+  .smallLogo{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .ulNone{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .logo {
+      color: #012E5D;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+  
+    }
+  
+    .smallLogo{
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 300;
+      
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      font-size: 1rem;
+      padding: 4px 6px;
+      text-decoration: none;
+    }
+
+    .ulNone {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #FAFAFA;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100vw;
+      gap: 5px;
+      align-content: space-between;
+      
+    }
+  }

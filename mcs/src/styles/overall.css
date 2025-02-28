@@ -1,0 +1,241 @@
+
+body {
+  padding-top: 10rem;
+}
+
+/* Unordered List with Circle Style */
+.ulCircle {
+    list-style-type:circle;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 5px;
+    
+  }
+
+  .ulCircle li {
+    margin-left: 3rem;
+    float: left;
+    font-weight: 500;
+    list-style-position: outside;
+    list-style-type:circle;
+  }
+
+  .width90{
+    width: 90%;
+  }
+
+  /* Fixed to the Right Side of all Pages */
+  .donateButton{
+    background-color: #de0000;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    right: 0;
+    bottom: middle;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 18pt;
+}
+
+/* Blocks For Background */
+.whiteBlock{
+  width: auto;
+  min-height: 25vh;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
+
+.blueBlock{
+  width: auto;
+  min-height: 25vh;
+  height: fit-content;
+  background-color: #012E5D;
+  color: white;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,2);
+}
+
+.bigBoldFont {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.normalFont {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem;
+} 
+
+/* Medium Font */
+.smallerFont {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.smallFont {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  padding: 1rem;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+/* Only Applied on Donations Page */
+.alignCenter2 {
+  display: block;
+  width: 80%;
+  text-align: center;
+  align-self: center;
+}
+.alignLeft {
+  text-align: left;
+}
+
+.twoColumns {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  width: auto;
+  margin-top: 1rem;
+  gap: 20px;
+}
+.twoRows {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 5px;
+  /* gap: 20px; */
+}
+
+.column{
+  flex: auto;
+  width: 50%;
+}
+
+.addMarginLeft {
+  margin-left: 2rem;
+}
+
+.smallImage{
+  background-color: rgb(240, 240, 240);
+  display: grid;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  min-width: 300px;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  
+}
+/* Unused */
+.bigImage {
+  background-color: rgb(240, 240, 240);
+  display: grid;
+  align-items: center;
+  text-align: center;
+  min-height: 800px;
+  min-width: 600px;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+/* Conatct Us Button */
+.button1 {
+  margin-top: 2rem;
+
+}
+.button1 a{
+  background-color: #012E5D;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+}
+
+/* Big Links Should not have Underlines */
+#bigLink {
+  text-decoration: none;
+  color: black;
+}
+.link, .link a::after {
+  text-decoration: solid;
+  color: white;
+}
+a::after {
+  color: black;
+}
+
+/* Smaller Links should have underline */
+#smallLink{
+  text-decoration: solid;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* For iFrame on Bottom of Donations Page */
+.mapsStyle {
+  border:0;
+}
+
+@media screen and (max-width: 1000px){
+
+  .smallImage{
+    background-color: transparent;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    
+  }
+
+  .twoColumns{
+    flex: none;
+    display: block;
+  }
+
+  .donateButton{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    right: 0;
+    margin-top: 15rem;
+    bottom: middle;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 16pt;
+}
+}
+
+/* 2247 Breakpoint of Menu */
+
+

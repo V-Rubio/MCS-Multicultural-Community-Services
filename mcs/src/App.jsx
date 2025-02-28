@@ -1,6 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Pages
+import Navbar from "./pages/Navbar.jsx";
+import Header from "./pages/Navbar.jsx";
+import Footer from './pages/Footer.jsx';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Families from './pages/Families';
+import Donations from "./pages/Donations.jsx";
+import PD from "./pages/Professional-Development.jsx";
+import Youth from "./pages/Youth.jsx";
 import './App.css'
 
 function App() {
@@ -8,26 +22,21 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <Navbar sticky="top" />
+
+        <Routes>
+          <Route exact path="/header" element={<Header />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/donate" element={<Donations />} />
+          <Route path="/families" element={<Families />} />
+          <Route path="/professional-development" element={<PD />} />
+          <Route path="/youth" element={<Youth />} />
+        </Routes>
+      </Router>
+
+      <Footer />
     </>
   )
 }
