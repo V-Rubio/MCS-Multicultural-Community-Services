@@ -1,0 +1,12 @@
+Installing... 
+
+    Next.js (App Router)
+        npx create-next-app@latest
+
+    React Router (v7)
+        npx create-react-router@latest
+
+    Vite (incompatible with Next.js)
+        npm create vite@latest my-app -- --template react
+
+

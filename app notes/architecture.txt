@@ -1,0 +1,25 @@
+Folder Structure
+    /public
+        /assets         # Images, icons, etc.
+        /favicon.ico    # Your site’s favicon
+    /src
+        /components     # Reusable components
+            Header.jsx
+            Footer.jsx
+            DonationForm.jsx  # New donation form component
+            NewsletterForm.jsx  # New newsletter form component
+        /pages          # Static pages
+            home.jsx
+            about.jsx
+            contact.jsx
+        /styles         # Global styles
+            global.css
+        /utils          # Utility functions
+            formHandler.js  # Helper functions for form submissions (optional)
+        /content        # For future blogs (if needed)
+            blog.md
+        /hooks          # Custom React hooks
+            useForm.js  # Custom hook for managing form states
+    /vite.config.js    # Vite configuration
+    /package.json      # Project dependencies
+    .gitignore         # Git ignore file
