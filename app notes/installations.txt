@@ -23,6 +23,10 @@ Running Development Server:
     npm run dev
         it tells you in terminal what localhost (on http://localhost:5173/)
 
+Closing Development Server: 
+    ctrl + c
+    exit
+
 Unused Installations of Note: 
     Next.js (App Router) - heavy 
         npx create-next-app@latest
